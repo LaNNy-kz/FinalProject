@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+li, a, button{
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color:white;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.Logo{
+    cursor: pointer;
+}
+.nav-list{
+    list-style: none;
+}
+.nav-list li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-list li a{
+    font-size: 16px;
+    transition: font-size 2s ease, transform 2s ease, color 2s ease; /* Плавный переход для всех свойств */
+    cursor: pointer;
+}
+.nav-list li a:hover{
+    font-size: 20px; /* Увеличиваем размер шрифта */
+    transform: scale(1.1); /* Увеличиваем масштаб */
+    color: #FFA31A; /* Меняем цвет текста */
+}
+button{
+    padding: 9px 25px;
+    background-color: #FFA31A;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button {
+    color:black;
+    transition: all 4s ease 0 s;
+}
+button:hover{
+    color:white;
+}
+h1{
+    color:white;
+    font-family: "Instrument Sans", Bold;
+    font-size: 60px;
+}
+.starth1{
+    margin-left: 16rem;
+    margin-top: 14rem;
+}
+video{
+    position: sticky;
+    left: 66rem;
+    margin-top: -21rem;
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    z-index: 1;
+}
+h2{
+    color:white;
+    font-family: "Instrument Sans", Regular;
+    font-size: 20px;
+    font-weight: 400;
+}
+.starth2{
+    margin-left: 16rem;
+    margin-top: -27rem;
+}
+.goTraining{
+    margin-top: 4rem;
+    margin-left: 16rem;
+    width: 200px; /* Увеличивает ширину */
+    height: 50px;
+}
+.goTraining a {
+    font-size: large;
+}
+.image-container {
+    width: 1920px;
+    height: 70px; /* Высота области совпадает с высотой изображения */
+    overflow: hidden; /* Обрезает содержимое, выходящее за пределы контейнера */
+    position: relative;
+    display: flex; /* Для размещения изображений в ряд */
+    margin-top: 19rem;
+}
+
+.image-container .scrolling-images {
+    display: flex; /* Выстраивает изображения в линию */
+    animation: slide-left 20s linear infinite; /* Анимация движения влево */
+}
+
+.image-container img {
+    width: 2138px; /* Ширина одного изображения */
+    height: 70px; /* Высота изображения */
+    flex-shrink: 0; /* Запрещает уменьшать изображения */
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(0); /* Начальное положение */
+    }
+    to {
+        transform: translateX(-2138px); /* Смещение на ширину одного изображения */
+    }
+}
+.container_h1{
+    text-align: center;
+    margin-top: 17rem;
+}
